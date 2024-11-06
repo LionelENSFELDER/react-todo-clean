@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Learn React",
+        "description": "Learn React from scratch",
+        "isDone": true
+    },
+    {
+        "id": 2,
+        "title": "Learn Node",
+        "description": "Learn React from scratch",
+        "isDone": true
+    },
+    {
+        "id": 3,
+        "title": "Learn Clean Architecture",
+        "description": "Learn React from scratch",
+        "isDone": false
+    },
+    {
+        "id": 4,
+        "title": "Learn ShadCN",
+        "description": "Learn React from scratch",
+        "isDone": false
+    }
+]
