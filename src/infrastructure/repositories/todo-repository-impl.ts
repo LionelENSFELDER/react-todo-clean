@@ -22,9 +22,6 @@ export class TodoRepositoryImpl implements TodoRepository {
 
     async addTodo(todo: TodoType): Promise<TodoType[]> {
         return new Promise((resolve, reject) => {
-            if (!(todo instanceof Todo)) {
-                reject(new Error("Invalid todo type !"))
-            }
             if (todo.id === undefined) {
                 todo.id = mockupTodos.length + 1
             }

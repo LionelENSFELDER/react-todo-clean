@@ -35,15 +35,23 @@ const useTodos = () => {
         }
     }
 
+    const addTodo = async (todo: Todo) => {
+        try {
+            const updatedTodos = await todoRepositoryImpl.addTodo(todo);
+            setTodos([...updatedTodos]);
+        } catch (error) {
+            console.error("Failed to add todo", error);
+        }
+    }
+
     useEffect(() => {
         getTodos();
     }, [])
 
     useEffect(() => {
-        console.log("useEffect from useTodos", todos);
     }, [todos])
 
-    return { todos, deleteTodo, updateTodo }
+    return { todos, deleteTodo, updateTodo, addTodo }
 };
 
 export default useTodos;

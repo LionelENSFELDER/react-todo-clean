@@ -21,7 +21,7 @@ export const TodoItem: React.FC<TodoItemProps> = ({ todo, onToggleUpdate, onDele
             <span
                 style={{ textDecoration: todo.isDone ? "line-through" : "none" }}
             >
-                {todo.title}
+                {todo.title} - {todo.description}
             </span>
             <button onClick={() => onDelete(todo)}>Delete</button>
         </div>
