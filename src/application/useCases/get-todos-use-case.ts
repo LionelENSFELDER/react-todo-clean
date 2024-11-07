@@ -1,5 +1,5 @@
-import { TodoRepository } from "../interfaces/todoRepository";
-import { Todo } from "../../domain/entities/todo";
+import { TodoRepository } from "../interfaces/todo-repository";
+import { Todo } from "../../domain/entities/todo-entity";
 
 export class getTodos {
     constructor(private todoRepository: TodoRepository) { }
